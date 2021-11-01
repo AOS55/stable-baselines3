@@ -46,4 +46,5 @@ src
 *.lprof
 *.prof
 
+examples
 MUJOCO_LOG.TXT

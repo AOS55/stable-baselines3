@@ -585,7 +585,7 @@ class OffPolicyAlgorithm(BaseAlgorithm):
                 # Retrieve reward and episode length if using Monitor wrapper
                 self._update_info_buffer(infos, done)
 
-                # Store data in replay buffer (normalized action and unnormalized observation)
+                # Store data in replay buffer (normalized action and un-normalized observation)
                 self._store_transition(replay_buffer, buffer_action, new_obs, reward, done, infos)
 
                 self._update_current_progress_remaining(self.num_timesteps, self._total_timesteps)
